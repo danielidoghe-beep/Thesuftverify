@@ -335,3 +335,114 @@ body{
 }
 
 }
+/* ===========================
+   MARKET SECTORS
+=========================== */
+
+.market-section{
+    padding:100px 7%;
+    background:#ffffff;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:46px;
+    font-weight:800;
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:650px;
+    margin:auto;
+    color:#6b7280;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.market-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.market-card{
+    background:#ffffff;
+    border:1px solid #ececec;
+    border-radius:22px;
+    padding:35px 30px;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.market-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+    border-color:#6C63FF;
+}
+
+.icon-box{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    background:#f3f0ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.icon-box i{
+    font-size:30px;
+    color:#6C63FF;
+}
+
+.market-card h3{
+    font-size:22px;
+    color:#111827;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.market-card a{
+    color:#6C63FF;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.market-card a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+.market-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:650px){
+
+.market-grid{
+    grid-template-columns:1fr;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+.market-card{
+    padding:30px 25px;
+}
+
+}
