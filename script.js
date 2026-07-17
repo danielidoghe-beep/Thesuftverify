@@ -61,3 +61,31 @@ if (menuBtn && mobileMenu) {
         mobileMenu.classList.toggle("show");
     });
 }
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+ScrollReveal().reveal('.hero-content', {
+    distance: '60px',
+    duration: 1000,
+    origin: 'bottom'
+});
+
+ScrollReveal().reveal('.market-card', {
+    distance: '50px',
+    duration: 900,
+    interval: 120,
+    origin: 'bottom'
+});
+
+ScrollReveal().reveal('.cta-box', {
+    distance: '60px',
+    duration: 1000,
+    origin: 'bottom'
+});
+
+ScrollReveal().reveal('.footer', {
+    distance: '40px',
+    duration: 1000,
+    origin: 'bottom'
+});
