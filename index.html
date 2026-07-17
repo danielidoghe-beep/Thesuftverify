@@ -1,183 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThesuftVerify</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
 <!-- ================= HEADER ================= -->
 
 <header class="header">
 
     <div class="logo">
-        <h2>ThesuftVerify</h2>
+
+        <a href="index.html">
+
+            <img src="logo.png" alt="ThesuftVerify Logo">
+
+            <span>ThesuftVerify</span>
+
+        </a>
+
     </div>
 
     <nav class="nav">
 
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Support</a>
-        <a href="#">Login</a>
+        <a href="index.html" class="active">Home</a>
 
-        <a href="#" class="signup-btn">
-            Sign Up
+        <a href="services.html">Services</a>
+
+        <a href="support.html">Support</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="signup.html" class="signup-btn">
+            Get Started
         </a>
 
     </nav>
 
-    <div class="menu-btn">
+    <button class="menu-btn" id="menuBtn">
 
-        ☰
+        <span></span>
+        <span></span>
+        <span></span>
 
-    </div>
+    </button>
 
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- Mobile Navigation -->
 
-<section class="hero">
+<div class="mobile-menu" id="mobileMenu">
 
-    <div class="hero-content">
+    <a href="index.html">Home</a>
 
-        <h1>
-            The Ultimate Panel Suite
-            <br>
-            for Digital Assets
-        </h1>
+    <a href="services.html">Services</a>
 
-        <p>
-            Trusted by thousands of businesses worldwide.
-        </p>
+    <a href="support.html">Support</a>
 
-        <!-- Search -->
+    <a href="login.html">Login</a>
 
-        <div class="search-box">
+    <a href="signup.html">Get Started</a>
 
-            <input
-                type="text"
-                placeholder="Search products..."
-            >
-
-            <button>
-
-                Search
-
-            </button>
-
-        </div>
-
-        <!-- Trending -->
-
-        <div class="trending">
-
-            <span>Trending:</span>
-
-            <a href="#">WhatsApp</a>
-
-            <a href="#">Telegram Premium</a>
-
-            <a href="#">US Number</a>
-
-            <a href="#">Instagram Likes</a>
-
-        </div>
-
-        <!-- Buttons -->
-
-        <div class="hero-buttons">
-
-            <a href="#" class="primary-btn">
-
-                Get Started Free
-
-            </a>
-
-            <a href="#" class="secondary-btn">
-
-                Explore Services
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= MARKET SECTORS ================= -->
-
-<section class="market-section">
-
-    <div class="section-title">
-        <h2>Explore Market Sectors</h2>
-
-        <p>
-            Everything you need to scale your digital presence.
-        </p>
-    </div>
-
-    <div class="market-grid">
-
-        <div class="market-card">
-            <i class="fa-solid fa-users"></i>
-            <h3>Social Accounts</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-sim-card"></i>
-            <h3>Virtual Numbers</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-chart-line"></i>
-            <h3>SMM Orders</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>Software Logs</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-shield-halved"></i>
-            <h3>Proxy</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <h3>E-SIM</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-play"></i>
-            <h3>Streaming</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-        <div class="market-card">
-            <i class="fa-solid fa-lock"></i>
-            <h3>VPN & Security</h3>
-            <a href="#">Browse Collection →</a>
-        </div>
-
-    </div>
-
-</section>
-<script src="script.js"></script>
-
-</body>
-</html>
+</div>
