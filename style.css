@@ -171,77 +171,167 @@ body{
 }
 
 }
-<!-- ================= HERO ================= -->
+/* ===========================
+   HERO
+=========================== */
 
-<section class="hero">
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:140px 20px 100px;
+    overflow:hidden;
+    background:#ffffff;
+}
 
-    <div class="hero-bg"></div>
+.hero-bg{
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at top right,#ede9fe 0%,transparent 35%),
+        radial-gradient(circle at bottom left,#dbeafe 0%,transparent 35%);
+    z-index:0;
+}
 
-    <div class="hero-content">
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    text-align:center;
+}
 
-        <h1>
-            The Ultimate Panel Suite
-            <br>
-            for Digital Assets
-        </h1>
+.hero-content h1{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.15;
+    color:#111827;
+    margin-bottom:24px;
+}
 
-        <p>
-            Trusted by thousands of businesses worldwide.
-        </p>
+.hero-content p{
+    font-size:22px;
+    color:#6b7280;
+    margin-bottom:45px;
+}
 
-        <!-- Search -->
+.search-box{
+    display:flex;
+    max-width:760px;
+    margin:0 auto 30px;
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
 
-        <div class="search-box">
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:20px;
+    font-size:18px;
+}
 
-            <input
-                type="text"
-                placeholder="Search products..."
-            >
+.search-box button{
+    background:#6C63FF;
+    color:#fff;
+    border:none;
+    padding:0 35px;
+    font-size:17px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
 
-            <button>
+.trending{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:45px;
+}
 
-                <i class="fa-solid fa-magnifying-glass"></i>
+.trending span{
+    font-weight:700;
+    color:#555;
+}
 
-                Search
+.trending a{
+    padding:10px 18px;
+    border-radius:50px;
+    border:1px solid #e5e7eb;
+    background:#fff;
+    color:#444;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
 
-            </button>
+.trending a:hover{
+    background:#6C63FF;
+    color:#fff;
+    border-color:#6C63FF;
+}
 
-        </div>
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
-        <!-- Trending -->
+.primary-btn,
+.secondary-btn{
+    padding:18px 36px;
+    border-radius:14px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.3s;
+}
 
-        <div class="trending">
+.primary-btn{
+    background:#6C63FF;
+    color:#fff;
+}
 
-            <span>Trending:</span>
+.primary-btn:hover{
+    background:#5548f7;
+}
 
-            <a href="#">WhatsApp</a>
+.secondary-btn{
+    border:2px solid #6C63FF;
+    color:#6C63FF;
+    background:#fff;
+}
 
-            <a href="#">Telegram Premium</a>
+.secondary-btn:hover{
+    background:#6C63FF;
+    color:#fff;
+}
 
-            <a href="#">US Number</a>
+@media(max-width:768px){
 
-            <a href="#">Instagram Likes</a>
+.hero-content h1{
+    font-size:42px;
+}
 
-        </div>
+.hero-content p{
+    font-size:18px;
+}
 
-        <!-- Buttons -->
+.search-box{
+    flex-direction:column;
+}
 
-        <div class="hero-buttons">
+.search-box button{
+    justify-content:center;
+    padding:18px;
+}
 
-            <a href="signup.html" class="primary-btn">
-
-                Get Started Free
-
-            </a>
-
-            <a href="services.html" class="secondary-btn">
-
-                Explore Services
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+}
